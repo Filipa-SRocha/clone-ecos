@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 /* CSS reset */
 * {
@@ -15,7 +15,12 @@ h2 {
 	font-size: 13px;
 	font-weight: 700;
 	color: #343a40;
-	margin-bottom: 10px;
+	margin: 15px;
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 16px;
 }
 
 header {
@@ -86,7 +91,7 @@ header img {
 
 /* Main */
 main {
-	max-width: 1200px;
+	max-width: 1150px;
 	margin: auto;
 	display: grid;
 	grid-template-columns: 3fr 2fr;
@@ -94,32 +99,45 @@ main {
 	padding: 20px 0;
 }
 
+/* ---- Section Structure ---- */
 section {
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px -1px, #cfcfcf4d 0px 1px 3px -1px;
 	border-radius: 5px;
 	background-color: #f8f9fa;
 	padding: 15px;
+	margin-bottom: 15px;
 }
 
-section > hr {
-	margin: 0 -15px;
-	color: #d9d9d9cb;
+section > div:first-child {
+	margin: -15px;
+	border-bottom: 1px solid #d9d9d9cb;
+	margin-bottom: 20px;
 }
 
-/* Articles */
+section.birthdays > div:nth-child(3),
+section.birthdays > div:nth-child(5) {
+	border-bottom: 1px solid #d9d9d9cb;
+	margin: -15px;
+	padding-top: 20px;
+	margin-bottom: 5px;
+}
 
-.articles > div {
+/* -------- Articles -------- */
+
+.articles > div:not(:first-child) {
 	background-color: white;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	box-shadow: #b6b6b6cb 0px 2px 5px -1px, #cfcfcf4d 0px 1px 3px -1px;
 	border-radius: 4px;
-
 	display: flex;
 	margin-top: 20px;
 }
 
-.articles img {
+.articles > div > div > p {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.articles > div > img {
 	width: 200px;
 	height: 200px;
 	margin-right: 10px;
@@ -134,20 +152,38 @@ section > hr {
 .card-info {
 	display: flex;
 	justify-content: space-between;
+	color: #6c757d;
 }
 
-/* Nav Center */
+.card-info > div {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
-.nav-center > div {
-	padding-top: 20px;
+.card-info i {
+	font-size: 16px;
+}
+
+.card-info span {
+	font-size: 12px;
+}
+
+.card-info img {
+	width: 16px;
+}
+
+/* -------- Nav Center -------- */
+
+.nav-center > div:not(:first-child) {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	grid-row-gap: 15px;
 }
 .nav-center > div > div {
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	box-shadow: #b6b6b6cb 0px 2px 5px -1px, #cfcfcf4d 0px 1px 3px -1px;
 	border-radius: 5px;
 	padding: 20px 0;
 	width: 120px;
@@ -168,7 +204,7 @@ section > hr {
 	font-weight: 700;
 }
 
-/* Birthdays */
+/* -------- Birthdays -------- */
 
 .birthdays img {
 	width: 70px;
@@ -176,11 +212,25 @@ section > hr {
 	margin-right: 20px;
 }
 
+.birthdays div:first-child {
+	margin-bottom: 0;
+}
+
 .birthdays > div > div {
 	padding: 20px;
 	display: flex;
 	border-bottom: 1px solid #d9d9d9cb;
 	margin: 0 -15px;
+}
+
+.birthdays > div > div > div p:last-child {
+	color: #6c757d;
+	font-size: 14px;
+	padding-top: 6px;
+}
+
+.birthdays i {
+	margin-right: 8px;
 }
 
 .birthdays h3 {
