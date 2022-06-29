@@ -177,8 +177,10 @@ section > hr {
 }
 
 .birthdays > div > div {
-	padding: 10px;
+	padding: 20px;
 	display: flex;
+	border-bottom: 1px solid #d9d9d9cb;
+	margin: 0 -15px;
 }
 
 .birthdays h3 {
