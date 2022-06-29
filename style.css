@@ -160,6 +160,10 @@ section.birthdays {
 	margin-top: 20px;
 }
 
+.articles > div:not(:first-child):hover {
+	cursor: pointer;
+}
+
 .articles > div > div > p {
 	font-size: 14px;
 	font-weight: 400;
