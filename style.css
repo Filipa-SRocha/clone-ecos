@@ -23,13 +23,17 @@ h3 {
 	font-size: 16px;
 }
 
+/* -------- HEADER -------- */
+
 header {
 	background: linear-gradient(178deg, #2a5ca6 10%, #77b256 90%);
+	position: fixed;
+	width: 100vw;
 }
 
 header > div {
 	background: url(./images/patternECOStransparente.png);
-	padding: 6px 40px;
+	padding: 6px 20px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -53,14 +57,23 @@ header > div > div:last-child i {
 	font-size: 26px;
 }
 
+header > div > div:last-child i:last-child {
+	font-size: 16px;
+	margin-left: 4px;
+}
+
 header img {
 	width: 100px;
 }
 
 .menu {
 	color: white;
-	font-size: 18px;
-	font-weight: 500;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.menu i {
+	margin-right: 8px;
 }
 
 .search {
@@ -96,7 +109,7 @@ main {
 	display: grid;
 	grid-template-columns: 3fr 2fr;
 	grid-column-gap: 20px;
-	padding: 20px 0;
+	padding: 70px 0;
 }
 
 /* ---- Section Structure ---- */
@@ -120,6 +133,10 @@ section.birthdays > div:nth-child(5) {
 	margin: -15px;
 	padding-top: 20px;
 	margin-bottom: 5px;
+}
+
+section.birthdays {
+	padding-bottom: 0;
 }
 
 /* -------- Articles -------- */
