@@ -4,6 +4,14 @@
 	margin: 0;
 	text-decoration: none;
 }
+body {
+	background-color: #eff3f8;
+}
+
+h2 {
+	font-size: 14px;
+	margin-top: 10px;
+}
 
 header {
 	background: linear-gradient(178deg, #2a5ca6 10%, #77b256 90%);
@@ -69,4 +77,64 @@ header img {
 	color: white;
 	right: 10px;
 	top: 8px;
+}
+
+/* Main */
+main {
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-column-gap: 20px;
+	padding: 20px 0;
+}
+
+section {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	border-radius: 5px;
+	background-color: #f8f9fa;
+	padding: 15px;
+}
+
+/* Articles */
+
+.articles > div {
+	background-color: white;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	border-radius: 4px;
+
+	display: flex;
+	margin-top: 20px;
+}
+
+.articles img {
+	width: 200px;
+	height: 200px;
+	margin-right: 10px;
+}
+
+.articles > div > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 5px 10px 5px 0;
+}
+.card-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Nav Center */
+
+.nav-center > div {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	padding: 20px;
+	color: green;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
