@@ -113,9 +113,10 @@ header img {
 	top: 8px;
 }
 
-/* Main */
+/* ---- Main and Section Structure ---- */
+
 main {
-	max-width: 1150px;
+	width: 90vw;
 	margin: auto;
 	display: grid;
 	grid-template-columns: 3fr 2fr;
@@ -123,7 +124,6 @@ main {
 	padding: 70px 0;
 }
 
-/* ---- Section Structure ---- */
 section {
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px -1px, #cfcfcf4d 0px 1px 3px -1px;
 	border-radius: 5px;
@@ -265,7 +265,7 @@ section.birthdays {
 	margin: 0 -15px;
 }
 
-.birthdays > div > div > div p:last-child {
+.birthday-info p:last-child {
 	color: #6c757d;
 	font-size: 14px;
 	padding-top: 6px;
