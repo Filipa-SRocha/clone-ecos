@@ -206,6 +206,10 @@ section.birthdays {
 	width: 16px;
 }
 
+#pagination {
+	display: none;
+}
+
 /* -------- Nav Center -------- */
 
 .nav-center > div:not(:first-child) {

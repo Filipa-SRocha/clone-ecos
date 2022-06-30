@@ -1,9 +1,10 @@
 @media (max-width: 992px) {
 	main {
-		max-width: 95vw;
+		width: 95vw;
 		grid-template-columns: 1fr 300px;
 	}
 
+	/* Header */
 	.search input {
 		width: 350px;
 	}
@@ -15,18 +16,19 @@
 	header > div > div:last-child {
 		width: 10vw;
 	}
-	/*  */
+
+	/*  Articles */
 	.card-info > div {
 		width: 55%;
 	}
 
-	/*  */
-
+	/* Nav-center */
 	.nav-center > div:not(:first-child) {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(4, 1fr);
 	}
 
+	/* Birthdays */
 	.birthdays > div:nth-child(even) > div {
 		flex-direction: column;
 		align-items: center;
@@ -49,8 +51,10 @@
 @media (max-width: 768px) {
 	main {
 		grid-template-columns: 1fr 160px;
+		justify-items: center;
 	}
 
+	/* header */
 	.search input {
 		width: 200px;
 	}
@@ -59,16 +63,7 @@
 		width: 15vw;
 	}
 
-	/*  */
-	.nav-center > div:not(:first-child) {
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(7, 1fr);
-		justify-items: center;
-		max-width: 150px;
-	}
-
-	/*  */
-
+	/* Articles */
 	.articles > div:not(:first-child) {
 		flex-direction: column;
 		align-items: center;
@@ -92,7 +87,26 @@
 		width: 25%;
 	}
 
-	/*  */
+	.articles {
+		display: grid;
+	}
+
+	#pagination {
+		display: block;
+		width: 20px;
+		text-align: center;
+		justify-self: center;
+	}
+
+	/* Nav-center */
+	.nav-center > div:not(:first-child) {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(7, 1fr);
+		justify-items: center;
+		max-width: 150px;
+	}
+
+	/* Birthdays */
 	.birthday-info p:nth-child(2) {
 		display: none;
 	}
@@ -109,16 +123,19 @@
 		width: 80vw;
 	}
 
+	/* Header */
 	.menu span {
 		display: none;
 	}
 
+	/* Nav-center */
 	.nav-center > div:not(:first-child) {
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(3, 1fr);
 		max-width: 90vw;
 	}
 
+	/* Birthdays */
 	.birthdays > div:nth-child(even) > div {
 		flex-direction: row;
 	}
@@ -141,6 +158,12 @@
 /* ------------- 4 quebra ----------- */
 
 @media (max-width: 480px) {
+	main {
+		width: 90vw;
+		max-width: 90vw;
+	}
+
+	/* Header */
 	header a {
 		display: none;
 	}
@@ -161,21 +184,19 @@
 		font-size: 22px;
 	}
 
-	main {
-		width: 90vw;
-		max-width: 90vw;
-	}
-
+	/* Articles */
 	.card-info div {
 		width: 45%;
 	}
 
+	/* Nav-center */
 	.nav-center > div:not(:first-child) {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(4, 1fr);
 		justify-items: center;
 	}
 
+	/* Birthdays */
 	.birthday-info p:nth-child(2) {
 		display: none;
 	}
