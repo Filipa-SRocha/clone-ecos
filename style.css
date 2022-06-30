@@ -213,6 +213,7 @@ section.birthdays {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	grid-row-gap: 15px;
+	justify-items: center;
 }
 .nav-center > div > div {
 	box-shadow: #b6b6b6cb 0px 2px 5px -1px, #cfcfcf4d 0px 1px 3px -1px;
