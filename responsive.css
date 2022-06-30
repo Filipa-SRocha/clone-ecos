@@ -47,14 +47,65 @@
 	}
 }
 
+/* -----------------2 quebra------------------------- */
+
 @media (max-width: 768px) {
-	body {
-		background-color: red;
+	main {
+		grid-template-columns: 1fr 160px;
+	}
+
+	.search input {
+		width: 200px;
+	}
+
+	header > div > div:last-child {
+		width: 15vw;
+	}
+
+	/*  */
+	.nav-center > div:not(:first-child) {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(7, 1fr);
+		justify-items: center;
+		max-width: 150px;
+		/* margin: 0 auto; */
+	}
+
+	/*  */
+
+	.articles > div:not(:first-child) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.articles > div:not(:first-child) h3 {
+		align-self: center;
+		padding: 10px;
+	}
+
+	.articles > div:not(:first-child) p {
+		padding: 5px;
+		text-align: justify;
+	}
+
+	.card-info > div {
+		width: 25%;
+	}
+
+	/*  */
+	.birthday-info p:nth-child(2) {
+		display: none;
 	}
 }
 
-@media (max-width: 567px) {
+@media (max-width: 576px) {
 	main {
 		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		background-color: red;
 	}
 }
